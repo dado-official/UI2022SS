@@ -1,0 +1,16 @@
+{
+  "applications" :
+  [{
+    "name" : "Netflix",
+    "commands":
+    [{
+      "shortCut": "space",
+      "imageUrl": "www.ico....."
+    },{
+      ... "auflistung der 6 Commands"
+      }
+    ]
+  },{
+  ... "einfoch des fuer a poor Programme"
+  }]
+}

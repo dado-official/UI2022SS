@@ -1,0 +1,116 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:desktop_client.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="desktop_client.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="desktop_client"
+        Width="600"
+        Height="800"
+        MaxHeight="2160"
+        MaxWidth="3840"
+        MinHeight="400"
+        MinWidth="450"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        TransparencyLevelHint="AcrylicBlur"
+        ExtendClientAreaToDecorationsHint="True">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+
+    <Panel>
+        <ExperimentalAcrylicBorder IsHitTestVisible="False">
+            <ExperimentalAcrylicBorder.Material>
+                <ExperimentalAcrylicMaterial
+                    BackgroundSource="Digger"
+                    TintColor="Black"
+                    TintOpacity="1"
+                    MaterialOpacity="0.65" />
+            </ExperimentalAcrylicBorder.Material>
+        </ExperimentalAcrylicBorder>
+
+            <TabControl>
+                <TabItem 
+                    Header="Programs"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Background="Transparent"
+                >
+                    <TextBlock>
+                        Programs
+                    </TextBlock>
+                </TabItem>
+
+                <TabItem 
+                    Header="Settings"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Stretch"
+                    
+                    Background="Transparent">
+                    <Panel>
+                            <ExperimentalAcrylicBorder IsHitTestVisible="False">
+                                <ExperimentalAcrylicBorder.Material>
+                                    <ExperimentalAcrylicMaterial
+                                        BackgroundSource="Digger"
+                                        TintColor="Black"
+                                        TintOpacity="1"
+                                        MaterialOpacity="0.65" />
+                                </ExperimentalAcrylicBorder.Material>
+                            </ExperimentalAcrylicBorder>
+                            <StackPanel Spacing="5" 
+                                        Orientation="Vertical" 
+                                        Margin="16">
+                                <CheckBox IsChecked="{Binding CheckBoxAuto}" 
+                                          Command="{Binding CheckBoxCommand}">Auto</CheckBox>
+                                <StackPanel Spacing="5"
+                                            Orientation="Horizontal"
+                                            HorizontalAlignment="Stretch"
+                                            VerticalAlignment="Center">
+                                    <TextBlock Text="Ip-Address:" 
+                                               VerticalAlignment="Center" />
+                                    <TextBlock Text="{Binding IsEnabled}"/>
+                                    <TextBox Name="TextBox1" Text="{Binding IpAddress}" 
+                                             Width="100" 
+                                             IsEnabled="{Binding IsEnabled, Mode=TwoWay}"/>
+                                </StackPanel>
+                                <StackPanel Spacing="5"
+                                            Orientation="Horizontal"
+                                            HorizontalAlignment="Stretch"
+                                            VerticalAlignment="Center">
+                                    <TextBlock Text="Port:" 
+                                               VerticalAlignment="Center" />
+                                    <TextBox Name="TextBox2" Text="{Binding Port}" 
+                                             IsEnabled="{Binding IsEnabled, Mode=TwoWay}" />
+                                </StackPanel>
+                            </StackPanel>
+                    
+                    
+                            <Button Content="Save"
+                                    Command="{Binding SaveCommand}"
+                                    VerticalAlignment="Bottom"
+                                    HorizontalAlignment="Stretch"
+                                    Margin="16"
+                                    HorizontalContentAlignment="Center"
+                                    Background="Transparent" />
+                        </Panel>
+                </TabItem>
+
+                <TabItem
+                    Header="Connection"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Stretch"
+                    
+                    Background="Transparent">
+                    <Panel>
+
+                    </Panel>
+                </TabItem>
+            </TabControl>
+        
+        
+    </Panel>
+</Window>
