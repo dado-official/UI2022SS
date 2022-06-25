@@ -9,11 +9,12 @@ namespace UIServer.Models;
 
 public class Connection
 {
-    private IPHostEntry _ipHost;
-    private IPAddress _ipAddr;
-    private IPEndPoint _localEndPoint;
-    private Socket _listener;
     private Socket _clientSocket;
+    private readonly IPAddress _ipAddr;
+    private readonly IPHostEntry _ipHost;
+    private readonly Socket _listener;
+    private readonly IPEndPoint _localEndPoint;
+
     public Connection()
     {
         Console.Write("one");
@@ -33,56 +34,47 @@ public class Connection
             Console.WriteLine("Waiting for connection ...");
             _clientSocket = _listener.Accept();
             Console.WriteLine("Client Connected ...");
-    
-            string? message = ReadLine();
+
+            var message = ReadLine();
             Console.WriteLine(message);
             SendLine("iidd");
-            Thread focuser = new Thread(WaitForAppFocus);
+            var focuser = new Thread(WaitForAppFocus);
             focuser.Start();
-
-
         }
         catch (Exception e)
         {
-            Console.WriteLine("Unexpected exception : {0}", e.ToString());
-    
+            Console.WriteLine("Unexpected exception : {0}", e);
         }
-
     }
 
     public void WaitForAppFocus()
     {
-        
         Console.WriteLine("listening tp applications");
 
         while (true)
         {
-            string? application = ReadLine();
+            var application = ReadLine();
             MainWindow.ChangeApplication(application);
         }
-        
     }
-    
+
     public int SendLine(string str)
     {
-        byte[] messageSent = Encoding.ASCII.GetBytes(str);
-        int byteSent = _clientSocket.Send(messageSent);
+        var messageSent = Encoding.ASCII.GetBytes(str);
+        var byteSent = _clientSocket.Send(messageSent);
         return byteSent;
     }
 
     public string? ReadLine()
     {
-        
-        byte[] bytes = new Byte[1024];
+        var bytes = new byte[1024];
         string data = null;
 
-        int numByte = _clientSocket.Receive(bytes);
-             
+        var numByte = _clientSocket.Receive(bytes);
+
         data += Encoding.ASCII.GetString(bytes,
             0, numByte);
 
         return data;
-
-
     }
 }

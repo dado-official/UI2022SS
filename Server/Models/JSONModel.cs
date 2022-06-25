@@ -7,13 +7,12 @@ public class JSONModel
     public class ApplicationF
     {
         public string name { get; set; }
-        public List<Shortcut> Shortcuts { get; set; }
+        public List<Shortcut> commands { get; set; }
     }
 
     public class Shortcut
     {
-        public string keys { get; set; }
-        public string imageURL { get; set; }
+        public string shortCut { get; set; }
+        public string imageUrl { get; set; }
     }
-    
 }

@@ -55,12 +55,11 @@ public class Connection
         }
     }
     
-    public static void ExecuteCommand(string commad)
+    public void ExecuteCommand(string command)
     {
-        Thread.Sleep(1000);
         Process proc = new System.Diagnostics.Process ();
         proc.StartInfo.FileName = "/bin/bash";
-        proc.StartInfo.Arguments = "-c \" " + "xdotool key " + commad + " \"";
+        proc.StartInfo.Arguments = "-c \" " + "xdotool key " + command + " \"";
         proc.StartInfo.UseShellExecute = false; 
         proc.StartInfo.RedirectStandardOutput = true;
         proc.Start ();
