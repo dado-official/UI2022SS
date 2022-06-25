@@ -19,9 +19,9 @@ public class Connection
     {
         Console.Write("one");
         _ipHost = Dns.GetHostEntry(Dns.GetHostName());
-        _ipAddr = _ipHost.AddressList[0];
+        _ipAddr = _ipHost.AddressList[1];
         _localEndPoint = new IPEndPoint(_ipAddr, 9000);
-        Console.WriteLine("Starting Server on " + _ipAddr);
+        Console.WriteLine("Starting Server on " + _ipAddr + ":" + "9000");
         _listener = new Socket(_ipAddr.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
     }
 

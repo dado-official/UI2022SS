@@ -18,7 +18,7 @@ public class Connection
     public Connection()
     {
         _ipHost = Dns.GetHostEntry(Dns.GetHostName());
-        _ipAddr = _ipHost.AddressList[0];
+        _ipAddr = IPAddress.Parse("192.168.0.42");;
         _localEndPoint = new IPEndPoint(_ipAddr, 9000);
         _sender = new Socket(_ipAddr.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
     }
@@ -57,6 +57,7 @@ public class Connection
     
     public void ExecuteCommand(string command)
     {
+        
         Process proc = new System.Diagnostics.Process ();
         proc.StartInfo.FileName = "/bin/bash";
         proc.StartInfo.Arguments = "-c \" " + "xdotool key " + command + " \"";

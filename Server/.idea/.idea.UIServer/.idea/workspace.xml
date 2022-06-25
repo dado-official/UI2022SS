@@ -29,23 +29,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/daniel/Documents/TuGraz/2022SS/UserInterfaces/UI2022SS/Client",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/media&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Project.UIServer">
+    <configuration name="Publish UIServer to folder (1)" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" platform="Any CPU" ready_to_run="true" runtime="linux-arm" target_folder="$USER_HOME$/Desktop/publish" target_framework="net6.0" uuid_high="-7862680912100962412" uuid_low="-5795669203858027844" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish UIServer to folder (2)" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" platform="Any CPU" ready_to_run="true" runtime="linux-arm" target_folder="$USER_HOME$/Desktop/publish" target_framework="net6.0" uuid_high="-7862680912100962412" uuid_low="-5795669203858027844" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish UIServer to folder (3)" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" platform="Any CPU" ready_to_run="true" runtime="linux-arm" target_folder="$PROJECT_DIR$/bin/Release/net6.0/publish2" target_framework="net6.0" uuid_high="-7862680912100962412" uuid_low="-5795669203858027844" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish UIServer to folder (4)" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" platform="Any CPU" ready_to_run="true" runtime="linux-arm" target_folder="$PROJECT_DIR$/bin/Release/net6.0/publish3" target_framework="net6.0" uuid_high="-7862680912100962412" uuid_low="-5795669203858027844" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish UIServer to folder (5)" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" platform="Any CPU" ready_to_run="true" runtime="linux-arm" target_folder="$PROJECT_DIR$/bin/Release/net6.0/linux-arm/publish4" target_framework="net6.0" uuid_high="-7862680912100962412" uuid_low="-5795669203858027844" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish UIServer to folder (6)" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" platform="Any CPU" ready_to_run="true" runtime="linux-arm" target_folder="$PROJECT_DIR$/bin/Release/net6.0/linux-arm/publish44" target_framework="net6.0" uuid_high="-7862680912100962412" uuid_low="-5795669203858027844" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish UIServer to folder (7)" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" platform="Any CPU" ready_to_run="true" runtime="linux-arm" target_folder="$PROJECT_DIR$/bin/Release/net6.0/pu" target_framework="net6.0" uuid_high="-7862680912100962412" uuid_low="-5795669203858027844" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish UIServer to folder (8)" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" platform="Any CPU" ready_to_run="true" runtime="linux-arm" target_folder="$PROJECT_DIR$/bin/Release/net6.0/publishhhhhh" target_framework="net6.0" uuid_high="-7862680912100962412" uuid_low="-5795669203858027844" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish UIServer to folder (9)" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" platform="Any CPU" ready_to_run="true" runtime="linux-arm" target_folder="$PROJECT_DIR$/bin/Release/net6.0/publishooooo" target_framework="net6.0" uuid_high="-7862680912100962412" uuid_low="-5795669203858027844" />
+      <method v="2" />
+    </configuration>
     <configuration name="Publish UIServer to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
       <riderPublish configuration="Release" delete_existing_files="true" include_native_libs_for_self_extract="true" platform="Any CPU" produce_single_file="true" ready_to_run="true" runtime="linux-arm" self_contained="true" target_folder="$PROJECT_DIR$/bin/Release/net6.0/linux-arm/publish" target_framework="net6.0" trim_unused_assemblies="true" uuid_high="-7862680912100962412" uuid_low="-5795669203858027844" />
       <method v="2" />
@@ -88,7 +125,8 @@
       <workItem from="1656166299302" duration="1069000" />
       <workItem from="1656167631853" duration="382000" />
       <workItem from="1656168750851" duration="108000" />
-      <workItem from="1656168989724" duration="5184000" />
+      <workItem from="1656168989724" duration="6616000" />
+      <workItem from="1656178574499" duration="8281000" />
     </task>
     <servers />
   </component>

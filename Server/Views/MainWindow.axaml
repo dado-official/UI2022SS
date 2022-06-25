@@ -7,9 +7,6 @@
         x:Class="UIServer.Views.MainWindow"
         Width="320"
         Height="240"
-        MaxHeight="240"
-        MaxWidth="320"
-        CanResize="False"
         Title="UIServer"
         TransparencyLevelHint="AcrylicBlur"
         Background="Transparent"
@@ -47,48 +44,50 @@
             <Button
                 Grid.Column="1"
                 Grid.Row="1"
-                Width="100"
-                Height="80"
-                Click="Button_OnClick_0" >
+                MinHeight="80"
+                MinWidth="100"
+                Click="Button_OnClick_6">
                 1
             </Button>
             <Button
                 Grid.Column="2"
                 Grid.Row="1"
-                Width="100"
-                Height="80"
-                Click="Button_OnClick_1">
+                MinHeight="80"
+                MinWidth="100"
+
+                Tapped="Button_OnClick_1">
                 2
+                
             </Button>
             <Button
                 Grid.Column="3"
                 Grid.Row="1"
-                Width="100"
-                Height="80"
+                MinHeight="80"
+                MinWidth="100"
                 Click="Button_OnClick_2">
                 3
             </Button>
             <Button
                 Grid.Column="1"
                 Grid.Row="2"
-                Width="100"
-                Height="80"
+                MinHeight="80"
+                MinWidth="100"
                 Click="Button_OnClick_3">
                 4
             </Button>
             <Button
                 Grid.Column="2"
                 Grid.Row="2"
-                Width="100"
-                Height="80"
+                MinHeight="80"
+                MinWidth="100"
                 Click="Button_OnClick_4">
                 5
             </Button>
             <Button
                 Grid.Column="3"
                 Grid.Row="2"
-                Width="100"
-                Height="80"
+                MinHeight="80"
+                MinWidth="100"
                 Click="Button_OnClick_5">
                 6
             </Button>

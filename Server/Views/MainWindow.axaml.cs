@@ -14,7 +14,7 @@ namespace UIServer.Views;
 public partial class MainWindow : Window
 {
     public static List<JSONModel.ApplicationF>? List;
-    public static List<JSONModel.Shortcut> Comm = new();
+    public static List<JSONModel.Shortcut> Comm = new List<JSONModel.Shortcut>();
 
     public MainWindow()
     {
@@ -27,27 +27,22 @@ public partial class MainWindow : Window
     {
         var text = File.ReadAllText("../../../file.json");
         List = JsonSerializer.Deserialize<List<JSONModel.ApplicationF>>(text);
-        Console.WriteLine(List[2].commands[1].shortCut);
+        Console.WriteLine("Load Json");
         var collection = List?[0].commands;
         if (collection != null) Comm.Add(collection);
     }
 
     public static void ChangeApplication(string application)
     {
+        Comm.Clear();
         var isFound = false;
-        if (List != null)
-            foreach (var apl in List)
+        Console.WriteLine(application);
+        foreach (var apl in List)
                 if (application.Contains(apl.name))
                 {
-                    Console.WriteLine(apl.name);
                     foreach (var sh in apl.commands)
                     {
                         Console.WriteLine(sh.shortCut + " ---- " + sh.imageUrl);
-                    }
-                    Comm = new List<JSONModel.Shortcut>();
-                    foreach (var sh in apl.commands)
-                    {
-                        //Console.WriteLine(sh.keys);
                         Comm.Add(sh);
                     }
                     isFound = true;
@@ -56,20 +51,27 @@ public partial class MainWindow : Window
 
         if (!isFound)
         {
+            foreach (var sh in List[0].commands)
+            {
+                //Console.WriteLine(sh.keys);
+                Comm.Add(sh);
+            }
         }
+        MainWindowViewModel.SetIcons(Comm);
     }
 
-    private void Button_OnClick_0(object? sender, RoutedEventArgs e)
+    
+    private void Button_OnClick_6(object? sender, RoutedEventArgs e)
     {
-        Console.WriteLine(Comm[0].ToString());
+        Console.WriteLine(Comm[0].shortCut);
         MainWindowViewModel._connection.SendLine(Comm[0].shortCut);
     }
-
     private void Button_OnClick_1(object? sender, RoutedEventArgs e)
     {
         Console.WriteLine(1);
         MainWindowViewModel._connection.SendLine(Comm[1].shortCut);
     }
+    
 
     private void Button_OnClick_2(object? sender, RoutedEventArgs e)
     {
