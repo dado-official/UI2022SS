@@ -2,6 +2,8 @@ using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
+using UIServer.Views;
 
 namespace UIServer.Models;
 
@@ -14,9 +16,10 @@ public class Connection
     private Socket _clientSocket;
     public Connection()
     {
+        Console.Write("one");
         _ipHost = Dns.GetHostEntry(Dns.GetHostName());
         _ipAddr = _ipHost.AddressList[0];
-        _localEndPoint = new IPEndPoint(_ipAddr, 11111);
+        _localEndPoint = new IPEndPoint(_ipAddr, 9000);
         Console.WriteLine("Starting Server on " + _ipAddr);
         _listener = new Socket(_ipAddr.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
     }
@@ -33,11 +36,11 @@ public class Connection
     
             string? message = ReadLine();
             Console.WriteLine(message);
-            SendLine("bubububububu");
-           
+            SendLine("iidd");
+            Thread focuser = new Thread(WaitForAppFocus);
+            focuser.Start();
 
 
-        
         }
         catch (Exception e)
         {
@@ -45,6 +48,19 @@ public class Connection
     
         }
 
+    }
+
+    public void WaitForAppFocus()
+    {
+        
+        Console.WriteLine("listening tp applications");
+
+        while (true)
+        {
+            string? application = ReadLine();
+            MainWindow.ChangeApplication(application);
+        }
+        
     }
     
     public int SendLine(string str)

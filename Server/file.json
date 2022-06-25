@@ -1,16 +1,102 @@
-{
-  "applications" :
-  [{
-    "name" : "Netflix",
-    "commands":
-    [{
-      "shortCut": "space",
-      "imageUrl": "www.ico....."
-    },{
-      ... "auflistung der 6 Commands"
+[
+  {
+    "name": "Netflix",
+    "commands": [
+      {
+        "shortCut": "space",
+        "imageUrl": "www.ico....."
+      },
+      {
+        "shortCut": "arrow down",
+        "imageUrl": "https://cdn-icons-png.flaticon.com/512/60/60957.png?w=826&t=st=1655978906~exp=1655979506~hmac=8dcc15481ffac664279d18ebb87872e26c911244734abd7c68ede47c00b8a5ab"
+      },
+      {
+        "shortCut": "arrow up",
+        "imageUrl": "https://cdn-icons-png.flaticon.com/512/61/61051.png?w=826&t=st=1655978892~exp=1655979492~hmac=ef23bf0cbb5fb4e94bcb5e0fa36b9a407077342eebb89a4e2ae3ae939c9d497d"
+      },
+      {
+        "shortCut": "arrow right",
+        "imageUrl": "https://png2.cleanpng.com/sh/8987ba01341d1c99791ef8fe3bf3ced5/L0KzQYm3V8AyN6t5gpH0aYP2gLBuTfNwdaF6jNd7LXnmf7B6TfZie6UyftH7d3H1dH7rjCdvdJDmfJ9vYYP3Pbf2kwdiepUyTdQ8OUi1QIS5UsViQGczSas6MUizSYS4VcMxPGo6TKs6MUSzR3B3jvc=/kisspng-computer-icons-fast-forward-download-fast-forward-5b398203225a86.1911809315304954911407.png"
+      },
+      {
+        "shortCut": "arrow left",
+        "imageUrl": "https://cdn-icons-png.flaticon.com/512/84/84226.png?w=826&t=st=1655979581~exp=1655980181~hmac=469a102d4e1f07302a67b421953a6bf3791c2b1f662d37365d0a19db7de8fb27"
       }
     ]
-  },{
-  ... "einfoch des fuer a poor Programme"
-  }]
-}
+  },
+  {
+    "name": "Disney+",
+    "commands": [
+      {
+        "shortCut": "space",
+        "imageUrl": "www.ico....."
+      },
+      {
+        "shortCut": "arrow down",
+        "imageUrl": "https://cdn-icons-png.flaticon.com/512/60/60957.png?w=826&t=st=1655978906~exp=1655979506~hmac=8dcc15481ffac664279d18ebb87872e26c911244734abd7c68ede47c00b8a5ab"
+      },
+      {
+        "shortCut": "arrow up",
+        "imageUrl": "https://cdn-icons-png.flaticon.com/512/61/61051.png?w=826&t=st=1655978892~exp=1655979492~hmac=ef23bf0cbb5fb4e94bcb5e0fa36b9a407077342eebb89a4e2ae3ae939c9d497d"
+      },
+      {
+        "shortCut": "arrow right",
+        "imageUrl": "https://png2.cleanpng.com/sh/8987ba01341d1c99791ef8fe3bf3ced5/L0KzQYm3V8AyN6t5gpH0aYP2gLBuTfNwdaF6jNd7LXnmf7B6TfZie6UyftH7d3H1dH7rjCdvdJDmfJ9vYYP3Pbf2kwdiepUyTdQ8OUi1QIS5UsViQGczSas6MUizSYS4VcMxPGo6TKs6MUSzR3B3jvc=/kisspng-computer-icons-fast-forward-download-fast-forward-5b398203225a86.1911809315304954911407.png"
+      },
+      {
+        "shortCut": "arrow left",
+        "imageUrl": "https://cdn-icons-png.flaticon.com/512/84/84226.png?w=826&t=st=1655979581~exp=1655980181~hmac=469a102d4e1f07302a67b421953a6bf3791c2b1f662d37365d0a19db7de8fb27"
+      }
+    ]
+  },
+  {
+    "name": "Youtube",
+    "commands": [
+      {
+        "shortCut": "space",
+        "imageUrl": "www.ico....."
+      },
+      {
+        "shortCut": "arrow down",
+        "imageUrl": "https://cdn-icons-png.flaticon.com/512/60/60957.png?w=826&t=st=1655978906~exp=1655979506~hmac=8dcc15481ffac664279d18ebb87872e26c911244734abd7c68ede47c00b8a5ab"
+      },
+      {
+        "shortCut": "arrow up",
+        "imageUrl": "https://cdn-icons-png.flaticon.com/512/61/61051.png?w=826&t=st=1655978892~exp=1655979492~hmac=ef23bf0cbb5fb4e94bcb5e0fa36b9a407077342eebb89a4e2ae3ae939c9d497d"
+      },
+      {
+        "shortCut": "arrow right",
+        "imageUrl": "https://png2.cleanpng.com/sh/8987ba01341d1c99791ef8fe3bf3ced5/L0KzQYm3V8AyN6t5gpH0aYP2gLBuTfNwdaF6jNd7LXnmf7B6TfZie6UyftH7d3H1dH7rjCdvdJDmfJ9vYYP3Pbf2kwdiepUyTdQ8OUi1QIS5UsViQGczSas6MUizSYS4VcMxPGo6TKs6MUSzR3B3jvc=/kisspng-computer-icons-fast-forward-download-fast-forward-5b398203225a86.1911809315304954911407.png"
+      },
+      {
+        "shortCut": "arrow left",
+        "imageUrl": "https://cdn-icons-png.flaticon.com/512/84/84226.png?w=826&t=st=1655979581~exp=1655980181~hmac=469a102d4e1f07302a67b421953a6bf3791c2b1f662d37365d0a19db7de8fb27"
+      }
+    ]
+  },
+  {
+    "name": "Spotify",
+    "commands": [
+      {
+        "shortCut": "space",
+        "imageUrl": "www.ico....."
+      },
+      {
+        "shortCut": "arrow down + STRG",
+        "imageUrl": "https://cdn-icons-png.flaticon.com/512/60/60957.png?w=826&t=st=1655978906~exp=1655979506~hmac=8dcc15481ffac664279d18ebb87872e26c911244734abd7c68ede47c00b8a5ab"
+      },
+      {
+        "shortCut": "arrow up + STRG",
+        "imageUrl": "https://cdn-icons-png.flaticon.com/512/61/61051.png?w=826&t=st=1655978892~exp=1655979492~hmac=ef23bf0cbb5fb4e94bcb5e0fa36b9a407077342eebb89a4e2ae3ae939c9d497d"
+      },
+      {
+        "shortCut": "arrow right + STRG",
+        "imageUrl": "https://cdn-icons-png.flaticon.com/512/254/254428.png"
+      },
+      {
+        "shortCut": "arrow left + STRG",
+        "imageUrl": "https://cdn-icons-png.flaticon.com/512/254/254437.png"
+      }
+    ]
+  }
+]
